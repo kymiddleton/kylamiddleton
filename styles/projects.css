@@ -1,0 +1,53 @@
+body {
+    background-color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    position: relative;
+    border: rgba(2, 81, 144, 0.2);
+    border-bottom-style: solid;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 700px 700px;
+    grid-gap: 50px;
+}
+
+h1 {
+    color: rgba(2, 81, 144, 0.52);
+    text-align: left;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.table {
+    display: table;   
+    margin-right: 30px;
+    padding-top: 35px;
+}
+
+ul#nav {
+    text-align: center;
+	list-style: none;
+}
+
+ul#nav li {
+    display: inline;
+}
+
+.shadow {
+    font-size: 15px;
+    color: rgb(139, 214, 255);
+    word-spacing: 10px;
+}
+
+a {
+    /* color: rgb(2, 81, 144); */
+    color: rgba(2, 81, 144, 0.52);
+    text-decoration: none;
+}
+
+/*================*/
