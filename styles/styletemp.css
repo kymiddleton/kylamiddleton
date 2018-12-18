@@ -1,0 +1,191 @@
+
+
+
+.ProfilePic { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #2c5fa8; 
+    margin-bottom: 40px;
+    z-index: auto;
+}
+
+.nav {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.nav ul {
+   text-align: center;
+   padding: 0px;
+   margin: -10px;
+}
+
+.nav ul li {
+    list-style-type: center;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.top {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #333333; 
+}
+
+
+h3 {
+    background-color: rgba(150, 150, 150, 0.6);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 2;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h4 {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    text-align: center;
+    color: #333333;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+main { 
+    background-color: rgba(150, 150, 150, 0.6);
+    background-size: 100% 60%;
+    color: #FFFFFF;
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.box {
+    /* display: grid; */
+    height: 100%;
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.a {
+    background: url("../images/Minimalist Directory.jpeg");
+}
+
+.b {
+    background: url("../images/Momentum_Morning_2.jpeg");
+}
+   
+.c {
+    background: url("../images/Full Stack Todo List.jpeg");
+}
+
+.d {
+    background: url("../images/Portfolio_1.jpeg");
+}
+
+.e {
+    background: url("../images/Portfolio_2.jpeg");
+}
+
+.f {
+    background: url("../images/Portfolio_3.jpg");
+}
+
+.image {
+    height: 150px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-top: 2px dotted black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    max-height: 220px;
+    padding-top: 165px;
+}
+
+footer {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    background-color: rgba(150, 150, 150, 0.6);
+    color: #FFFFFF;
+    line-height: 3;
+    border-color: white;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+    padding: 5px 5px;
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* body{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .nav {
+        position: relative;
+        top: -80px;
+    }
+
+    .nav ul {
+        text-align: left;
+     }
+
+    .nav ul li {
+        margin-left: 0px;
+    }
+
+    .top {
+        margin: 10px;
+    }
+
+    .ProfilePic {
+        position: absolute;
+        left: 80%;
+        top: 20px;
+        z-index: 2;
+    }
+
+    h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 35px;
+        line-height: 1.5;
+        margin-top: 30px;
+    }
+    
+    h4 {
+        padding-left: 5px;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .image {
+        height: 350px; 
+    }
+} */
