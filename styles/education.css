@@ -52,6 +52,16 @@ a {
 
 /*================*/
 
+h2 {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgba(2, 81, 144, 0.52);
+    font-size: 30px;
+    margin: 20px 10px 5px 10px;
+}
+
+/*================*/
+
 .container {
     display: grid;
     max-width: auto;
@@ -60,7 +70,7 @@ a {
     grid-template-areas: "tech-logo  tech-info"
                          "troy-logo  troy-info"
                          "ohio-logo  ohio-info";
-    grid-template-rows: 175px 175px 175px;
+    grid-template-rows: 255px 188px 188px;
     /* grid-template-columns: 1fr 3fr; */
     grid-template-columns: 17% 80%;
     grid-gap: 10px;
@@ -76,37 +86,73 @@ a {
     align-items: center;
 }
 
+.tech-logo {
+    padding-top: 40px;
+    border-bottom: 1px solid black;
+}
+
+.troy-logo, .ohio-logo {
+    border-bottom: 1px solid black;
+}
+
 .tech-info {
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     grid-area: "tech-info";
     width: 860px;
 }
 
 .troy-info{
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     grid-area: "troy-info";
     width: 860px;
 }
 
-.ohio-info{
-    border: 1px solid black;
-    grid-area: "ohio-info";
-    width: 860px;
+.section-subtitle-troy, .section-subtitle-ohio {
+    padding-top: 65px;
 }
 
-h2 {
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: rgba(2, 81, 144, 0.52);
-    font-size: 30px;
-    margin: 20px 10px 5px 10px;
+.ohio-info{
+    border-bottom: 1px solid black;
+    grid-area: "ohio-info";
+    width: 860px;
 }
 
 h3 {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
-    line-height: 1;
-    color: #0000009e;
     font-size: 20px;
-    /* padding-top: 20px; */
+    line-height: 1;
+    color: #000000e3;
+    padding-top: 20px;
+}
+
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #0000009e;
+    padding-top: 10px; 
+}
+
+P {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+    line-height: 1;
+    color: #000000e3;
+    font-size: 18px;
+    padding-top: 10px; 
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.list-items {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+    list-style-type: square;
+    line-height: 1.1;
+    color: #000000e3;
+    font-size: 18px;
+    margin-left: 50px;
+    padding-top: 4px; 
 }
