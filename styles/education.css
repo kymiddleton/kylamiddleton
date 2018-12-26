@@ -1,24 +1,26 @@
 body {
     background-color: white;
-    font-family: 'Roboto Condensed', sans-serif;
 }
 
 header {
     position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
     border: rgba(2, 81, 144, 0.2);
     border-bottom-style: solid;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 700px 700px;
-    grid-gap: 50px;
+    /* grid-template-columns: 700px 700px; */
+    grid-template-columns: 50% 65%;
+    /* grid-gap: 50px; */
 }
 
 h1 {
+    font-family: 'Roboto Condensed', sans-serif;
     color: rgba(2, 81, 144, 0.52);
     text-align: left;
     font-size: 50px;
     letter-spacing: 2px;
-    margin-left: 45px;
+    margin-left: 65px;
     /* margin-left: 20px; */
     margin-top: 20px;
     margin-bottom: 20px;
@@ -26,7 +28,7 @@ h1 {
 
 .table {
     display: table;   
-    margin-right: 30px;
+    /* margin-right: 30px; */
     padding-top: 35px;
 }
 
@@ -40,13 +42,13 @@ ul#nav li {
 }
 
 .shadow {
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 15px;
     color: rgb(139, 214, 255);
     word-spacing: 10px;
 }
 
 a {
-    /* color: rgb(2, 81, 144); */
     color: rgba(2, 81, 144, 0.52);
     text-decoration: none;
 }
@@ -132,7 +134,7 @@ h4 {
     text-align: center;
     font-size: 20px;
     line-height: 1.2;
-    color: #0000009e;
+    color: #000000e3;
     padding-top: 10px; 
 }
 
@@ -140,7 +142,7 @@ P {
     font-family: 'Josefin Sans', sans-serif;
     text-align: left;
     line-height: 1;
-    color: #000000e3;
+    color: #0000009e;
     font-size: 18px;
     padding-top: 10px; 
     padding-left: 20px;
@@ -152,7 +154,7 @@ P {
     text-align: left;
     list-style-type: square;
     line-height: 1.1;
-    color: #000000e3;
+    color: #0000009e;
     font-size: 18px;
     margin-left: 50px;
     padding-top: 4px; 
