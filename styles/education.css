@@ -81,6 +81,7 @@ h2 {
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 50px;
+    padding-bottom: 35px;
     justify-items: center;
 }
 
@@ -158,4 +159,22 @@ P {
     font-size: 18px;
     margin-left: 50px;
     padding-top: 4px; 
+}
+
+/*======================*/
+
+.bottom {
+    font-family: 'Roboto Condensed', sans-serif;
+    border: rgba(2, 81, 144, 0.2);
+    border-top-style: solid;
+    bottom: 0;
+}
+
+.footer {
+    font-family: 'Josefin Sans', sans-serif;
+    bottom: 0;
+    color: rgba(2, 81, 144, 0.52);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }

@@ -60,6 +60,7 @@ main {
     /* grid-template-rows: 220px 220px 220px 220px; */
     grid-template-columns: 625px 769px;
     grid-gap: 10px;
+    padding-bottom: 70px;
 }
 
 .ProfilePic { 
@@ -105,4 +106,23 @@ address {
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+/*======================*/
+
+.bottom {
+    font-family: 'Roboto Condensed', sans-serif;
+    border: rgba(2, 81, 144, 0.2);
+    border-top-style: solid;
+    bottom: 0;
+}
+
+.footer {
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    bottom: 0;
+    color: rgba(2, 81, 144, 0.52);
+    text-align: center;
+    padding-left: 41%;
+    padding-bottom: 5px;
 }
