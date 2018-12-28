@@ -54,11 +54,13 @@ a {
 /*================*/
 
 main { 
+    position: relative;
     display: grid;
     height: 100%;
     grid-template-rows: 1fr;
     grid-template-columns: 625px 769px;
     grid-gap: 10px;
+    padding-bottom: 70px;
 }
 
 .ProfilePic { 
@@ -85,4 +87,21 @@ p {
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 75px;
+}
+
+.bottom {
+    font-family: 'Roboto Condensed', sans-serif;
+    border: rgba(2, 81, 144, 0.2);
+    border-top-style: solid;
+    bottom: 0;
+}
+
+.footer {
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    bottom: 0;
+    color: rgba(2, 81, 144, 0.52);
+    text-align: center;
+    padding-left: 41%;
+    padding-bottom: 5px;
 }
