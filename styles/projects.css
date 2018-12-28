@@ -86,13 +86,26 @@ a {
     width: 860px;
 }
 
+.section-title {
+    font-style: bold;
+}
+
+.subtitle {
+    text-align: left;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 5px;
+}
+
 h3 {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     font-size: 25px;
     line-height: 1;
     color: #000000e3;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 50px;
 }
 
 h4 {
@@ -106,24 +119,24 @@ h4 {
 
 p {
     font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
+    text-align: left;
     line-height: 1;
-    color: #0000009e;
+    color: #000000e3;;
     font-size: 20px;
-    padding-top: 30px; 
-    padding-left: 20px;
-    padding-bottom: 10px;
+    padding-top: 10px; 
+    padding-left: 50px;
+    padding-bottom: 25px;
 }
 
 .links {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     line-height: 1;
-    color: #0000009e;
+    color: rgba(16, 101, 168, 0.84);
     font-size: 20px;
     padding-top: 30px; 
-    padding-left: 20px;
-    padding-bottom: 10px;
+    padding-left: 50px;
+    /* padding-bottom: 10px; */
 }
 
 /*======================*/
