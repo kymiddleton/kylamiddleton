@@ -55,20 +55,22 @@ a {
 /*=== END OF HEADER ===*/
 
 .grid-container {
+    /* position: relative; */
+    overflow: auto;
     display: grid;
+    /* height: 667px; */
     align-content: center;
     /* grid-template-rows: repeat(2, 1fr); */
     grid-template-columns: 1fr;
     /* background-color: #2196F3; */
     background-color: rgb(38, 126, 208);
-    
-    grid-gap: 10px;
+    /* grid-gap: 10px; */
     padding: 15px;
 }
 
 .grid-item {
     background-color: white;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     text-align: center;
     /* padding: 15px; */
     padding: 10px;
@@ -91,7 +93,11 @@ a {
 } 
 
 .row4 {
-    display: none;
+    /* display: none; */
+    /* height: 40px; */
+    height: 5px;
+    /* padding-bottom: 40px; */
+    margin-bottom: 40px;
 }
 
 .ProfilePic { 
@@ -126,13 +132,18 @@ p {
 }
 
 .footer {
-    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    position: fixed;
+    left: 0;
     bottom: 0;
+    width: 100%;
     color: rgba(2, 81, 144, 0.52);
+    background-color: white;
+    /* color: white; */
     text-align: center;
     padding-top: 15px;
     padding-bottom: 10px;
-}
+ }
 
 /*=========  TABLET STYLING ========*/
 @media only screen and (min-width: 768px) { 
@@ -186,11 +197,11 @@ p {
 
     .grid-container {
         grid-gap: 15px;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-rows: repeat(6, 1fr); */
+        /* grid-template-columns: repeat(4, 1fr); */
         /* background-color: #2196F3; */
         padding: 10px;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .grid-item {
@@ -217,7 +228,10 @@ p {
     } 
     
     .row4 {
-        display: none;
+        /* display: none; */
+        height: 5px;
+        /* padding-bottom: 40px; */
+        margin-bottom: 40px;
     }
 
     .ProfilePic { 
@@ -235,8 +249,18 @@ p {
     /*=== END OF GRID CONTAINER ===*/
 
     .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: rgba(2, 81, 144, 0.52);
+        /* background-color: red; */
+        /* color: white; */
+        text-align: center;
+     }
+    /* .footer {
         padding-top: 15px;
-    }
+    } */
 }
 
 
@@ -265,11 +289,14 @@ p {
     /*===== END OF HEADER =====*/
 
     .grid-container {
-        grid-gap: 0px;
+        display: grid;
+        grid-gap: 6px;
+        overflow: auto;
         /* grid-template-rows: repeat(4, 1fr); */
-        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: repeat(3, 1fr);
         /* background-color: #2196F3; */
-        padding: 30px;
+        /* padding: 30px; */
+        padding: 15px;
     }
 
     .grid-item {
@@ -293,14 +320,19 @@ p {
     .row3 {
         grid-column: 1 / span 4;
         grid-row: 2;
-        height: 280px;
+        /* height: 280px; */
+        /* height: 170px; */
+        height: 120px;
     } 
     
     .row4 {
         /* display: none; */
-        grid-column: 1 span 4;
+        grid-column: 1 / span 4;
         grid-row: 3;
         height: 100px;
+        /* height: 5px; */
+        /* padding-bottom: 40px; */
+        margin-bottom: 40px;
     }
 
     .ProfilePic { 
@@ -317,7 +349,29 @@ p {
     }
     /*=== END OF GRID CONTAINER ===*/
 
-    .footer {
-        padding-top: 15px;
+    .bottom {
+        /* position: relative; */
+        font-family: 'Roboto Condensed', sans-serif;
+        border: rgba(2, 81, 144, 0.2);
+        border-top-style: solid;
+        display: grid;
+        /* grid-template-rows: repeat(2, 1fr); */
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        bottom: 0;
     }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: rgba(2, 81, 144, 0.52);
+        /* background-color: red; */
+        /* color: white; */
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 10px;
+     }
+
 }
