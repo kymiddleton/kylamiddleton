@@ -86,13 +86,13 @@ img {
     padding: 0 20px 20px;
 }
 
-.text > button {
+/* .text > button {
     background: gray;
     border: 0;
     color: white;
     padding: 10px;
     width: 100%;
-}
+} */
 
 .grid > article:nth-child(1) {
     grid-column: span 2;

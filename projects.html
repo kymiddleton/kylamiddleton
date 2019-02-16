@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
     <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/modal.css">
 </head>
 
 <body>
@@ -33,167 +34,188 @@
         </div>
     </header>
 
-    <div id="projects">
-        <div class="card">
-            <div class="title-box">
-                <h3><b>Volunteer Mommy</b></h3>
-                <button>More</button>
-            </div>
+    <main class="grid">
+        <article class="card">
             <img src="./image-thumbnails/Portfolio_3.jpg" alt="volunteer" style="width:100%">
             <div class="container">
-                <h3><b>Volunteer Mommy</b></h3>
-                <h4>Full Stack Application</h4>
-                <p>A React Application</p>
-                
-                <button>More</button>
-            </div>
-        </div>
+                <div class="title-box">
+                    <h3 id="volunteer-title" class="title">Volunteer Mommy</h3>
+                    <!-- Open the Modal-->
+                    <button id="volunteerBtn" class="button-link">More</button>
+                </div>
 
-        <div class="card">
+                <!-- Modal Content-->
+                <div id="volunteerModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header"> 
+                            <span id="volunteerClose" class="close">x</span>
+                            <h2 class="modal-header-text">Volunteer Mommy</h2>
+                        </div>
+                        <h2 class="modal-subheader">Inspiration</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Overview</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Accomplishments</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Tools Used</h2>
+                        <ul class="tech-list">
+                            <li class="tech-item"></li>
+                        </ul>
+
+                        <footer class="modal-footer">
+                            <a target="_blank" rel="heroku" href="https://volunteermommy.herokuapp.com">
+                                <button id="viewSource" class="button-link">View Online</button>
+                            </a>
+                            
+                            <a target="_blank" rel="github" href="https://github.com/kymiddleton/volunteermommy">
+                                <button>View Source</button>
+                            </a>
+
+                            <button id="cancel-btn-volunteer">Cancel</button>
+                        </footer>                            
+                    </div>
+                </div>
+            </div>
+            <h4>React / Full Stack Application</h4>
+            <p>A React Application</p>
+        </article>
+
+        <article class="card">
             <img src="./image-thumbnails/packIT-home.jpeg" alt="packit" style="width:100%">
             <div class="container">
-                <h3><b>packIT</b></h3>
+                    <div class="title-box">
+                        <h3 id="project2-title" class="title">packIT</h3>
+                        <button id="myBtn2" class="button-link">More</button>
+
+                        <div id="myModal2" class="modal" style="display: none;">
+                                <div class="modal-content">
+                                    <div class="modal-header"> <span class="close2"></span>
+                                        <h2 class="modal-header-text">Title of Modal Content</h2>
+                                    </div>
+                                    <h2 class="modal-subheader">Inspiration</h2>
+                                    <p class="modal-summary">Summary</p>
+        
+                                    <h2 class="modal-subheader">Overview</h2>
+                                    <p class="modal-summary">Summary</p>
+        
+                                    <h2 class="modal-subheader">Accomplishments</h2>
+                                    <p class="modal-summary">Summary</p>
+        
+                                    <h2 class="modal-subheader">Tools Used</h2>
+                                    <ul class="tech-list">
+                                        <li></li>
+                                    </ul>
+        
+                                    <footer class="modal-footer">
+                                        <a target="_blank" rel="" href="">
+                                            <button>View Online</button>
+                                        </a>
+                                        
+                                        <a target="_blank" rel="" href="">
+                                            <button>View Source</button>
+                                        </a>
+        
+                                        <button id="cancel-btn2" >Cancel</button>
+                                    </footer>                            
+                                </div>
+                            </div>
+                    </div>
                 <h4>Full Stack Application</h4>
                 <p>Travel Companion Packing Application</p>
-                
-                <button>More</button>
             </div>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
             <img src="./image-thumbnails/momentum_crop.jpeg" alt="momentum" style="width:100%">
             <div class="container">
-                <h3><b>Momentum Clone</b></h3>
+                <div class="title-box">
+                    <h3>Momentum Clone</h3>
+                    <button>More</button>
+                </div>
                 <h4>Full Stack Application</h4>
                 <p>A clone of Google Chrome's browser extension, Momentum. The dashboard replaces tabs
                     with a dedicated space to track todo's, store favorite links,
                     check the local weather and get inspired with daily photos and quotes.</p>
-                
-                <button>More</button>
             </div>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
             <img src="./image-thumbnails/Kyla-todo.jpeg" alt="todo" style="width:100%">
             <div class="container">
-                <h3><b>Todo List</b></h3>
+                <div class="title-box">
+                    <h3>Todo List</h3>
+                    <button>More</button>
+                </div>
                 <h4>Full Stack Application</h4>
                 <p>Description</p>
-                
-                <button>More</button>
             </div>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
             <img src="./image-thumbnails/Portfolio_3.jpg" alt="todosocket" style="width:100%">
             <div class="container">
-                <h3><b>Todo List with Socket.io</b></h3>
+                <div class="title-box">
+                    <h3>Todo List with Socket.io</h3>
+                    <button>More</button>
+                </div>
                 <h4>Subtitle</h4>
                 <p>Description</p>
-                
-                <button>More</button>
             </div>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
             <img src="./image-thumbnails/Minimalist Directory.jpeg" alt="directory" style="width:100%">
             <div class="container">
-                <h3><b>Directory</b></h3>
+                <div class="title-box">
+                    <h3>Directory</h3>
+                    <button>More</button>
+                </div>
                 <h4>Subtitle</h4>
                 <p>Description</p>
-                
-                <button>More</button>
             </div>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
             <img src="./image-thumbnails/Portfolio_3.jpg" alt="momentum" style="width:100%">
             <div class="container">
-                <h3><b>Black and White Photo Grid</b></h3>
+                <div class="title-box">
+                    <h3>Black and White Photo Grid</h3>
+                    <button>More</button>
+                </div>
                 <h4>Subtitle</h4>
                 <p>Description</p>
-                
-                <button>More</button>
             </div>
-        </div>
+        </article>
 
-    
-        <!-- <div class="container"> -->
-
-            <!-- <section class="momentum-image">
-                <img src="./image-thumbnails/momentum_crop.jpeg" alt="momentum"> </i>
-            </section>
-            <section class="momentum-info">
-                <h3 class="section-title">MOMENTUM CLONE</h3>
-                <h3 class="subtitle">Full Stack Application</h3>
-                <p>A clone of Google Chrome's browser extension, Momentum. The dashboard replaces tabs
-                    with a dedicated space to track todo's, store favorite links,
-                    check the local weather and get inspired with daily photos and quotes.
-                </p>
-                <address>
-                    <a class="links" href="project-momentum.html" target="_blank" alt="Momentum">View Project Details</a>
-                </address>
-            </section> -->
-
-            <!-- <section class="packit-image">
-                <img src="./image-thumbnails/packIT-home.jpeg" alt="packit"> </i>
-            </section>
-            <section class="packit-info">
-                <h3 class="section-title">packIT</h3>
+        <article class="card">
+            <img src="./image-thumbnails/Portfolio_3.jpg" alt="momentum" style="width:100%">
+            <div class="container">
+                <div class="title-box">
+                    <h3>Black and White Photo Grid</h3>
+                    <button>More</button>
+                </div>
+                <h4>Subtitle</h4>
                 <p>Description</p>
-                <h4 class="links">View Project Details</h4>
-                <a href="#" target="_blank"></a>
-            </section> -->
-
-            <!-- <section class="react-image">
-                <img src="./image-thumbnails/Portfolio_3.jpg" alt="momentum"> </i>
-            </section>
-            <section class="react-info">
-                <h3 class="section-title">Coming Soon</h3>
-                <p>Description</p>
-                <h4 class="links">View Project Details</h4>
-                <a href="#" target="_blank"></a>
-            </section> -->
-
-            <!-- <section class="todo-image">
-                <img src="./image-thumbnails/Kyla-todo.jpeg" alt="todo"> </i>
-            </section>
-            <section class="todo-info">
-                <h3 class="section-title">Todo List</h3>
-                <p>Description</p>
-                <h4 class="links">View Project Details</h4>
-                <a href="#" target="_blank"></a>
-            </section> -->
-
-            <!-- <section class="todosocket-image">
-                <img src="./image-thumbnails/Portfolio_3.jpg" alt="todosocket"> </i>
-            </section>
-            <section class="todosocket-info">
-                <h3 class="section-title">Todo List with Socket.io</h3>
-                <p>Description</p>
-                <h4 class="links">View Project Details</h4>
-                <a href="#" target="_blank"></a>
-            </section> -->
-
-            <!-- <section class="directory-image">
-                <img src="./image-thumbnails/Minimalist Directory.jpeg" alt="directory"> </i>
-            </section>
-            <section class="directory-info">
-                <h3 class="section-title">Minimalist Directory</h3>
-                <p>Description</p>
-                <h4 class="links">View Project Details</h4>
-                <a href="#" target="_blank"></a>
-            </section> -->
-
-        <!-- </div> -->
+            </div>
+        </article>
 
         <div class="bottom">
             <section class="footer">
                 <footer>© Kyla Middleton. All rights reserved.</footer>
             </section>
         </div>
-    </div>
+    </main>
 
+    <script src="app.js"></script>
 </body>
 
 </html>
