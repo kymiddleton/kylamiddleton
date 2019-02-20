@@ -99,12 +99,14 @@ h4 {
     font-size: 16px;
     line-height: 1.2;
     padding-bottom: 10px; 
+    /* margin-left: 20px; */
 }
 
 p {
     font-size: 14px;
     padding-top: 10px; 
     padding-bottom: 25px;
+    /* margin-left: 20px; */
 }
 
 button {
@@ -122,10 +124,11 @@ button {
     height: 30px;
     width: 50px;
 }
+
 /*=== FOOTER ===*/
 .bottom {
     font-family: 'Roboto Condensed', sans-serif;
-    border: rgba(2, 81, 144, 0.2);
+    /* border: rgba(2, 81, 144, 0.2); */
     border-top-style: solid;
     display: grid;
     grid-template-columns: 1fr;
@@ -196,6 +199,9 @@ button {
         grid-template-columns: repeat(auto-fill, minmax(243px, 1fr));
         grid-gap: 20px;
         align-content: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
     }
 
     .card {
@@ -223,7 +229,7 @@ button {
     .grid > article {
         padding-bottom: 20px;
         margin-top: 25px;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
     }
     
     h3 {
@@ -306,11 +312,169 @@ button {
     /*=== FOOTER ===*/
     .bottom {
         font-family: 'Roboto Condensed', sans-serif;
-        border: rgba(2, 81, 144, 0.2);
+        /* border: rgba(2, 81, 144, 0.2); */
         border-top-style: solid;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 5px;
         bottom: 0;
     }
+}
+
+/* == Modal Info == */
+
+
+
+/* Button - More */
+
+
+/* == Modal Content == */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* background-color: rgb(0,0,0); */
+    background-color: rgb(38, 126, 208);
+    background-color: (0,0,0,0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.modal-content {
+    max-width: 900px;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    /* background-color: white; */
+    /* color: rgb(38, 126, 208); */
+    border: rgba(2, 81, 144, 0.2);
+    border-bottom-style: solid;
+    background-color: rgba(42, 139, 228, 0.89);
+    color: white;
+}
+
+.volunteerClose, .packClose, 
+.momClose, .recipeClose, .todoClose, 
+.socketClose, .directoryClose, .fancyClose {
+    /* color: #aaa; */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    padding-top: 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header-text {
+    padding-top: 25px;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 15px;
+}
+
+.modal-subheader {
+    /* font-size: 25px;
+    padding-top: 10px; */
+    border: rgb(38, 126, 208);
+    border-bottom-style: solid;
+}
+
+.modal-summary {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 15px;
+    line-height: 1.2;
+}
+
+.tech-list {
+    column-count: 3;
+    column-gap: 20px;
+    list-style-type: square;
+    margin-left: 36px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.3;
+    column-count: 4;
+    column-gap: 40px;
+}
+
+/* ==== MODAL FOOTER ==== */
+.modal-footer {
+    position: relative;
+    padding: 40px 16px;
+    /* background-color: white; */
+    /* color: rgb(38, 126, 208); */
+    border: rgba(2, 81, 144, 0.2);
+    border-top-style: solid;
+    background-color: rgba(42, 139, 228, 0.89);
+    color: white;
+}
+
+.footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#cancel-btn-volunteer, #cancel-btn-pack {
+    position: absolute;
+    top: 22px;
+    right: 15px;
+    vertical-align: top;
+    text-align: center;
+    height: 35px;
+    width: 65px;
+    background-color: white;
+    color:  rgb(38, 126, 208);
+}
+
+.btn-source {
+    position: absolute;
+    left: 15px;
+    height: 45px;
+    width: 80px;
+    margin-top: 10px;
+    background-color: white;
+    color:  rgb(38, 126, 208);
+}
+
+.btn-view {
+    position: absolute;
+    left: 130px;
+    /* left: 80px; */
+    height: 45px;
+    width: 80px;
+    margin-top: 10px;
+    bottom: 15px;
+    cursor: pointer;
+    background-color: white;
+    color:  rgb(38, 126, 208);
+    /* border-radius: 50%; */
+    /* color: white; */
+
 }

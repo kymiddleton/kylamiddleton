@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
     <link rel="stylesheet" href="styles/projects.css">
-    <link rel="stylesheet" href="styles/modal.css">
 </head>
 
 <body>
@@ -36,7 +35,7 @@
 
     <main class="grid">
         <article class="card">
-            <img src="./image-thumbnails/Portfolio_3.jpg" alt="volunteer" style="width:100%">
+            <img src="./images/Volunteer.jpeg" alt="volunteer" style="width:100%" style="height:100%">
             <div class="container">
                 <div class="title-box">
                     <h3 id="volunteer-title" class="title">Volunteer Mommy</h3>
@@ -47,9 +46,138 @@
                 <!-- Modal Content-->
                 <div id="volunteerModal" class="modal">
                     <div class="modal-content">
-                        <div class="modal-header"> 
-                            <span id="volunteerClose" class="close">x</span>
+                        <div class="modal-header">
+                            <span id="close" class="volunteerClose">x</span>
                             <h2 class="modal-header-text">Volunteer Mommy</h2>
+                        </div>
+                        <h2 class="modal-subheader">Inspiration</h2>
+                        <p class="modal-summary">
+                            As the chair for Parents-with-Preschoolers I have the responsibility of managing 150+
+                            volunteers. Managing paper sign-up sheets, scheduling events and assigning volunteers in
+                            spreadsheets prompted the idea of an application to simplify and automate the process.
+                        </p>
+
+                        <h2 class="modal-subheader">Overview</h2>
+                        <p class="modal-summary">
+                            Upon arrival to the website new users are prompted to create an account and verify their
+                            credentials by loging in to the main site.
+                            Authenticated users have access to the dashboard area where users have the ability to add
+                            adult volunteers and add enrolled children.
+                        </p>
+
+                        <h2 class="modal-subheader">Accomplishments</h2>
+                        <p class="modal-summary">
+                            This was an independent final project for an immersive web development course using the MERN
+                            stack.
+                        </p>
+
+                        <h2 class="modal-subheader">Tools Used</h2>
+                        <ul class="tech-list">
+                            <li class="tech-item">MongoDB</li>
+                            <li class="tech-item">Express</li>
+                            <li class="tech-item">React</li>
+                            <li class="tech-item">Node</li>
+                            <li class="tech-item">HTML5</li>
+                            <li class="tech-item">CSS</li>
+                            <li class="tech-item">Semantic UI</li>
+                            <li class="tech-item">Material UI</li>
+                            <li class="tech-item">Axios</li>
+                            <li class="tech-item">Json Web Token</li>
+                            <li class="tech-item">Passport.js</li>
+                            <li class="tech-item">Validator</li>
+                        </ul>
+
+                        <footer class="modal-footer">
+                            <a target="_blank" rel="heroku" href="https://volunteermommy.herokuapp.com">
+                                <button id="viewOnline" class="btn-view">View Online</button>
+                            </a>
+
+                            <a target="_blank" rel="github" href="https://github.com/kymiddleton/volunteermommy">
+                                <button id="viewSource" class="btn-source">View Source</button>
+                            </a>
+
+                            <button id="cancel-btn-volunteer">Cancel</button>
+                        </footer>
+                    </div>
+                </div>
+
+                <h4>MERN Stack Application</h4>
+                <p>An application designed to streamline and automate the process of managing and scheduling school
+                    volunteers.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="./images/pack-IT.jpeg " alt="packit" style="width:100%" style="height:100%">
+            <div class="container">
+                <div class="title-box">
+                    <h3 id="project2-title" class="title">packIT</h3>
+                    <!-- Open the Modal-->
+                    <button id="packBtn" class="button-link">More</button>
+                </div>
+
+                <!-- Modal Content-->
+                <div id="packModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="packClose" class="packClose">x</span>
+                            <h2 class="modal-header-text">packIT</h2>
+                        </div>
+
+                        <h2 class="modal-subheader">Inspiration</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Overview</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Accomplishments</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Tools Used</h2>
+                        <ul class="tech-list">
+                            <li class="tech-item"></li>
+                        </ul>
+
+                        <footer class="modal-footer">
+                            <a target="_blank" rel="heroku" href="https://pack--it.herokuapp.com">
+                                <button id="viewOnline" class="btn-view">View Online</button>
+                            </a>
+
+                            <a target="_blank" rel="github" href="https://github.com/kymiddleton/packIT">
+                                <button id="viewSource" class="btn-source">View Source</button>
+                            </a>
+
+                            <button id="cancel-btn-pack">Cancel</button>
+                        </footer>
+                    </div>
+                </div>
+
+                <h4>Full Stack Application</h4>
+                <p>An application for travelers wanting a simplified apprach to packing filtered by four attributes: Weather, Transportation, Destination and Packing Style. </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="./images/Momentum.jpeg" alt="momentum" style="width:100%" style="height: 100%">
+            <div class="container">
+                <div class="title-box">
+                    <h3 id="momentum-title" class="title">Momentum Clone</h3>
+                    <!-- Open the Modal-->
+                    <button id="momBtn" class="button-link">More</button>
+                </div>
+
+                <!-- Modal Content-->
+                <div id="momModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="momClose" class="momClose">x</span>
+                            <h2 class="modal-header-text">Momentum Clone</h2>
                         </div>
                         <h2 class="modal-subheader">Inspiration</h2>
                         <p class="modal-summary">
@@ -72,75 +200,19 @@
                         </ul>
 
                         <footer class="modal-footer">
-                            <a target="_blank" rel="heroku" href="https://volunteermommy.herokuapp.com">
-                                <button id="viewSource" class="button-link">View Online</button>
-                            </a>
-                            
-                            <a target="_blank" rel="github" href="https://github.com/kymiddleton/volunteermommy">
-                                <button>View Source</button>
+                            <a target="_blank" rel="heroku" href="https://momentum-clone-project.herokuapp.com/">
+                                <button id="viewOnline" class="btn-view">View Online</button>
                             </a>
 
-                            <button id="cancel-btn-volunteer">Cancel</button>
-                        </footer>                            
+                            <a target="_blank" rel="github" href="https://github.com/kymiddleton/momentum.clone">
+                                <button id="viewSource" class="btn-source">View Source</button>
+                            </a>
+
+                            <button id="cancel-btn-mom">Cancel</button>
+                        </footer>
                     </div>
                 </div>
-            </div>
-            <h4>React / Full Stack Application</h4>
-            <p>A React Application</p>
-        </article>
 
-        <article class="card">
-            <img src="./image-thumbnails/packIT-home.jpeg" alt="packit" style="width:100%">
-            <div class="container">
-                    <div class="title-box">
-                        <h3 id="project2-title" class="title">packIT</h3>
-                        <button id="myBtn2" class="button-link">More</button>
-
-                        <div id="myModal2" class="modal" style="display: none;">
-                                <div class="modal-content">
-                                    <div class="modal-header"> <span class="close2"></span>
-                                        <h2 class="modal-header-text">Title of Modal Content</h2>
-                                    </div>
-                                    <h2 class="modal-subheader">Inspiration</h2>
-                                    <p class="modal-summary">Summary</p>
-        
-                                    <h2 class="modal-subheader">Overview</h2>
-                                    <p class="modal-summary">Summary</p>
-        
-                                    <h2 class="modal-subheader">Accomplishments</h2>
-                                    <p class="modal-summary">Summary</p>
-        
-                                    <h2 class="modal-subheader">Tools Used</h2>
-                                    <ul class="tech-list">
-                                        <li></li>
-                                    </ul>
-        
-                                    <footer class="modal-footer">
-                                        <a target="_blank" rel="" href="">
-                                            <button>View Online</button>
-                                        </a>
-                                        
-                                        <a target="_blank" rel="" href="">
-                                            <button>View Source</button>
-                                        </a>
-        
-                                        <button id="cancel-btn2" >Cancel</button>
-                                    </footer>                            
-                                </div>
-                            </div>
-                    </div>
-                <h4>Full Stack Application</h4>
-                <p>Travel Companion Packing Application</p>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="./image-thumbnails/momentum_crop.jpeg" alt="momentum" style="width:100%">
-            <div class="container">
-                <div class="title-box">
-                    <h3>Momentum Clone</h3>
-                    <button>More</button>
-                </div>
                 <h4>Full Stack Application</h4>
                 <p>A clone of Google Chrome's browser extension, Momentum. The dashboard replaces tabs
                     with a dedicated space to track todo's, store favorite links,
@@ -149,64 +221,280 @@
         </article>
 
         <article class="card">
-            <img src="./image-thumbnails/Kyla-todo.jpeg" alt="todo" style="width:100%">
+            <img src="./images/Recipe.jpeg" alt="recipe" style="width:100%" style="height: 100%">
             <div class="container">
                 <div class="title-box">
-                    <h3>Todo List</h3>
-                    <button>More</button>
+                    <h3 id="recipe-title" class="title">Recipe</h3>
+                    <!-- Open the Modal-->
+                    <button id="recipeBtn" class="button-link">React</button>
                 </div>
+
+                <!-- Modal Content-->
+                <div id="recipeModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="recipeClose" class="recipeClose">x</span>
+                            <h2 class="modal-header-text">Recipe</h2>
+                        </div>
+                        <h2 class="modal-subheader">Inspiration</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Overview</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Accomplishments</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Tools Used</h2>
+                        <ul class="tech-list">
+                            <li class="tech-item"></li>
+                        </ul>
+
+                        <footer class="modal-footer">
+                            <a target="_blank" rel="heroku" href="https://kymiddleton.github.io/recipe/">
+                                <button id="viewOnline" class="btn-view">View Online</button>
+                            </a>
+
+                            <a target="_blank" rel="github" href="https://github.com/kymiddleton/recipe">
+                                <button id="viewSource" class="btn-source">View Source</button>
+                            </a>
+
+                            <button id="cancel-btn-recipe">Cancel</button>
+                        </footer>
+                    </div>
+                </div>
+                <h4>Subtitle</h4>
+                <p>Description</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="./images/Todo-List.jpeg" alt="todo" style="width:100%" style="height: 100%">
+            <div class="container">
+                <div class="title-box">
+                    <h3 id="todo-title" class="title">Todo List</h3>
+                    <!-- Open the Modal-->
+                    <button id="todoBtn" class="button-link">More</button>
+                </div>
+
+                <!-- Modal Content-->
+                <div id="todoModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="todoClose" class="todoClose">x</span>
+                            <h2 class="modal-header-text">Todo List</h2>
+                        </div>
+
+                        <h2 class="modal-subheader">Inspiration</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Overview</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Accomplishments</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Tools Used</h2>
+                        <ul class="tech-list">
+                            <li class="tech-item"></li>
+                        </ul>
+
+                        <footer class="modal-footer">
+                            <a target="_blank" rel="heroku" href="https://todoapp-km.herokuapp.com/">
+                                <button id="viewOnline" class="btn-view">View Online</button>
+                            </a>
+
+                            <a target="_blank" rel="github" href="https://github.com/kymiddleton/todo_app_database">
+                                <button id="viewSource" class="btn-source">View Source</button>
+                            </a>
+
+                            <button id="cancel-btn-todo">Cancel</button>
+                        </footer>
+                    </div>
+                </div>
+
                 <h4>Full Stack Application</h4>
                 <p>Description</p>
             </div>
         </article>
 
         <article class="card">
-            <img src="./image-thumbnails/Portfolio_3.jpg" alt="todosocket" style="width:100%">
+            <img src="./images/Todo-Socket.jpeg" alt="todosocket" style="width:100%" style="height: 100%">
             <div class="container">
                 <div class="title-box">
-                    <h3>Todo List with Socket.io</h3>
-                    <button>More</button>
+                    <h3 id="socket-title" class="title">Todo List</h3>
+                    <!-- Open the Modal-->
+                    <button id="socketBtn" class="button-link">More</button>
                 </div>
+
+                <!-- Modal Content-->
+                <div id="socketModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="socketClose" class="socketClose">x</span>
+                            <h2 class="modal-header-text">Todo List with Socket.io</h2>
+                        </div>
+                        <h2 class="modal-subheader">Inspiration</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Overview</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Accomplishments</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Tools Used</h2>
+                        <ul class="tech-list">
+                            <li class="tech-item"></li>
+                        </ul>
+
+                        <footer class="modal-footer">
+                            <a target="_blank" rel="heroku" href="https://todo-socketio.herokuapp.com/">
+                                <button id="viewOnline" class="btn-view">View Online</button>
+                            </a>
+
+                            <a target="_blank" rel="github" href="https://github.com/kymiddleton/todo_socketio">
+                                <button id="viewSource" class="btn-source">View Source</button>
+                            </a>
+
+                            <button id="cancel-btn-socket">Cancel</button>
+                        </footer>
+                    </div>
+                </div>
+                <h4>Todo List with Socket.io</h4>
+                <p>Description</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="./images/Directory.jpeg" alt="directory" style="width:100%" style="height: 100%">
+            <div class="container">
+                <div class="title-box">
+                    <h3 id="directory-title" class="title">Directory</h3>
+                    <!-- Open the Modal-->
+                    <button id="directoryBtn" class="button-link">More</button>
+                </div>
+
+                <!-- Modal Content-->
+                <div id="directoryModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="directoryClose" class="directoryClose">x</span>
+                            <h2 class="modal-header-text">Directory</h2>
+                        </div>
+                        <h2 class="modal-subheader">Inspiration</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Overview</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Accomplishments</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Tools Used</h2>
+                        <ul class="tech-list">
+                            <li class="tech-item"></li>
+                        </ul>
+
+                        <footer class="modal-footer">
+                            <a target="_blank" rel="heroku" href="https://kymiddleton.github.io/EmployeeDirectoryWk3/">
+                                <button id="viewOnline" class="btn-view">View Online</button>
+                            </a>
+
+                            <a target="_blank" rel="github" href="https://github.com/kymiddleton/EmployeeDirectoryWk3">
+                                <button id="viewSource" class="btn-source">View Source</button>
+                            </a>
+
+                            <button id="cancel-btn-directory">Cancel</button>
+                        </footer>
+                    </div>
+                </div>
+
                 <h4>Subtitle</h4>
                 <p>Description</p>
             </div>
         </article>
 
         <article class="card">
-            <img src="./image-thumbnails/Minimalist Directory.jpeg" alt="directory" style="width:100%">
+            <img src="./images/Fancypants.jpeg" alt="fancypants" style="width:100%" style="height: 100%">
             <div class="container">
                 <div class="title-box">
-                    <h3>Directory</h3>
-                    <button>More</button>
+                    <h3 id="fancy-title" class="title">Fancypants</h3>
+                    <!-- Open the Modal-->
+                    <button id="fancyBtn" class="button-link">More</button>
                 </div>
-                <h4>Subtitle</h4>
+
+                <!-- Modal Content-->
+                <div id="fancyModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="fancyClose" class="fancyClose">x</span>
+                            <h2 class="modal-header-text">Fancypants</h2>
+                        </div>
+                        <h2 class="modal-subheader">Inspiration</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Overview</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Accomplishments</h2>
+                        <p class="modal-summary">
+                            Summary
+                        </p>
+
+                        <h2 class="modal-subheader">Tools Used</h2>
+                        <ul class="tech-list">
+                            <li class="tech-item"></li>
+                        </ul>
+
+                        <footer class="modal-footer">
+                            <a target="_blank" rel="heroku" href="https://kymiddleton.github.io/Fancypants-Grid/">
+                                <button id="viewOnline" class="btn-view">View Online</button>
+                            </a>
+
+                            <a target="_blank" rel="github" href="https://github.com/kymiddleton/Fancypants-Grid">
+                                <button id="viewSource" class="btn-source">View Source</button>
+                            </a>
+
+                            <button id="cancel-btn-fancy">Cancel</button>
+                        </footer>
+                    </div>
+                </div>
+
+                <h4>Responsive CSS Photo Grid</h4>
                 <p>Description</p>
             </div>
         </article>
 
-        <article class="card">
-            <img src="./image-thumbnails/Portfolio_3.jpg" alt="momentum" style="width:100%">
-            <div class="container">
-                <div class="title-box">
-                    <h3>Black and White Photo Grid</h3>
-                    <button>More</button>
-                </div>
-                <h4>Subtitle</h4>
-                <p>Description</p>
-            </div>
-        </article>
 
-        <article class="card">
-            <img src="./image-thumbnails/Portfolio_3.jpg" alt="momentum" style="width:100%">
-            <div class="container">
-                <div class="title-box">
-                    <h3>Black and White Photo Grid</h3>
-                    <button>More</button>
-                </div>
-                <h4>Subtitle</h4>
-                <p>Description</p>
-            </div>
-        </article>
 
         <div class="bottom">
             <section class="footer">
