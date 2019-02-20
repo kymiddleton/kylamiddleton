@@ -417,6 +417,7 @@ h2 {
     margin-left: 20px;
     padding-top: 15px;
     line-height: 1.2;
+    padding-bottom: 0;
 }
 
 .tech-list {
@@ -443,7 +444,19 @@ h2 {
     color: white;
 }
 
-#cancel-btn-volunteer, #cancel-btn-pack {
+/* #cancel-btn-volunteer, #cancel-btn-pack, #cancel-btn-mom {
+    position: absolute;
+    top: 22px;
+    right: 15px;
+    vertical-align: top;
+    text-align: center;
+    height: 35px;
+    width: 65px;
+    background-color: white;
+    color:  rgb(38, 126, 208);
+} */
+
+.cancel-btn {
     position: absolute;
     top: 22px;
     right: 15px;
