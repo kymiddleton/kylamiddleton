@@ -238,7 +238,7 @@ li {
     a {
         /* color: rgba(2, 81, 144, 0.52);
         text-decoration: none; */
-        font-size: 27px;
+        /* font-size: 27px; */
     }
 
     /*===== END OF HEADER =====*/
@@ -347,6 +347,13 @@ li {
         font-size: 19px;
         word-spacing: 40px;
     }
+
+    a {
+        /* color: rgba(2, 81, 144, 0.52);
+        text-decoration: none; */
+        font-size: 27px;
+    }
+
     /*===== END OF HEADER =====*/
 
     /*=== GRID CONTAINER ===*/
