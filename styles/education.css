@@ -326,7 +326,7 @@ li {
 }
 
 /*=========  DESKTOP STYLING ========*/
-@media only screen and (min-width: 992px) { 
+@media only screen and (min-width: 1300px) { 
 
     header {
         grid-gap: 10px;
@@ -359,7 +359,7 @@ li {
     /*=== GRID CONTAINER ===*/
     .grid { 
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(346px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
     }
 
     .grid > article {
@@ -420,8 +420,8 @@ li {
     /*=== FOOTER ===*/
     .bottom {
         font-family: 'Roboto Condensed', sans-serif;
-        border: rgba(2, 81, 144, 0.2);
-        border-top-style: solid;
+        /* border: rgba(2, 81, 144, 0.2);
+        border-top-style: solid; */
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 5px;

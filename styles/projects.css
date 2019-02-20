@@ -266,7 +266,7 @@ button {
 }
 
 /*=========  DESKTOP STYLING ========*/
-@media only screen and (min-width: 992px) { 
+@media only screen and (min-width: 1300px) { 
 
     header {
         grid-gap: 10px;
@@ -293,7 +293,7 @@ button {
         text-decoration: none; */
         font-size: 27px;
     }
-    
+
     /*===== END OF HEADER =====*/
 
     /*=== GRID CONTAINER ===*/
