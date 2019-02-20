@@ -162,7 +162,7 @@ button {
         text-align: left;
         font-size: 40px;
         letter-spacing: 2px;
-        margin-left: 15px;
+        margin-left: 25px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -287,6 +287,13 @@ button {
         font-size: 19px;
         word-spacing: 40px;
     }
+
+    a {
+        /* color: rgba(2, 81, 144, 0.52);
+        text-decoration: none; */
+        font-size: 27px;
+    }
+    
     /*===== END OF HEADER =====*/
 
     /*=== GRID CONTAINER ===*/
@@ -434,11 +441,6 @@ h2 {
     border-top-style: solid;
     background-color: rgba(42, 139, 228, 0.89);
     color: white;
-}
-
-.footer {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 
 #cancel-btn-volunteer, #cancel-btn-pack {

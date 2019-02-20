@@ -57,7 +57,15 @@ a {
 
 /*=== GRID CONTAINER ===*/
 img {
-    width: 100%;
+    /* width: 100%; */
+    width: 50%;
+}
+
+.school-image {
+    /* align-content: center; */
+    text-align: center;
+    margin-left: 24%;
+    margin-right: 24%;
 }
 
 .grid { 
@@ -79,7 +87,7 @@ img {
 
 .grid > article {
     max-width: 375px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .text {
@@ -169,8 +177,8 @@ li {
 /*=== FOOTER ===*/
 .bottom {
     font-family: 'Roboto Condensed', sans-serif;
-    border: rgba(2, 81, 144, 0.2);
-    border-top-style: solid;
+    /* border: rgba(2, 81, 144, 0.2);
+    border-top-style: solid; */
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 5px;
@@ -203,7 +211,7 @@ li {
         text-align: left;
         font-size: 40px;
         letter-spacing: 2px;
-        margin-left: 15px;
+        margin-left: 25px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -228,15 +236,31 @@ li {
     }
 
     a {
-        color: rgba(2, 81, 144, 0.52);
-        text-decoration: none;
+        /* color: rgba(2, 81, 144, 0.52);
+        text-decoration: none; */
+        font-size: 27px;
     }
+
     /*===== END OF HEADER =====*/
 
     /*=== GRID CONTAINER ===*/
+
+    img {
+        width: 100%;
+    }
+
+    .school-image {
+        /* align-content: center; */
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .grid { 
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        padding-top: 15px;
+        padding-bottom: 20px;
     }
 
     .grid > article {
