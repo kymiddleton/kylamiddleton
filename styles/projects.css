@@ -60,7 +60,6 @@ a {
 /*=== END OF HEADER ===*/
 
 /*=== GRID CONTAINER ===*/
-
 .card {
     width: 100%;
     border-radius: 6px;
@@ -129,6 +128,137 @@ button {
     height: 30px;
     width: 50px;
 }
+/*=== END OF GRID ===*/
+
+/*=== MODAL ===*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* background-color: rgb(0,0,0); */
+    background-color: rgb(38, 126, 208);
+    background-color: (0,0,0,0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    max-width: 900px;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.modal-header {
+    padding: 2px 16px;
+    border: rgba(2, 81, 144, 0.2);
+    border-bottom-style: solid;
+    background-color: rgba(42, 139, 228, 0.89);
+    color: white;
+}
+
+.modal-headertext {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.volunteerClose, .packClose, 
+.momClose, .recipeClose, .todoClose, 
+.socketClose, .directoryClose, .fancyClose {
+    /* color: #aaa; */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    padding-top: 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-subheader {
+    font-size: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 15px;
+    border: rgb(38, 126, 208);
+    border-bottom-style: solid;
+}
+
+.modal-summary {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 15px;
+    line-height: 1.2;
+    padding-bottom: 0;
+}
+
+.tech-list {
+    column-count: 2;
+    column-gap: 0px;
+    list-style-type: square;
+    margin-left: 36px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.3;
+}
+
+/* ==== MODAL FOOTER ==== */
+.modal-footer {
+    position: relative;
+    padding: 40px 16px;
+    border: rgba(2, 81, 144, 0.2);
+    border-top-style: solid;
+    background-color: rgba(42, 139, 228, 0.89);
+    color: white;
+}
+
+.cancel-btn {
+    position: absolute;
+    right: 15px;
+    vertical-align: top;
+    text-align: center;
+    height: 40px;
+    width: 65px;
+    background-color: white;
+    color:  rgb(38, 126, 208);
+}
+
+.btn-source {
+    position: absolute;
+    left: 15px;
+    height: 40px;
+    width: 65px;
+    background-color: white;
+    color:  rgb(38, 126, 208);
+}
+
+.btn-view {
+    position: absolute;
+    left: 87px;
+    height: 40px;
+    width: 65px;
+    bottom: 15px;
+    cursor: pointer;
+    background-color: white;
+    color:  rgb(38, 126, 208);
+}
+/*=== END OF MODAL ===*/
 
 /*=== FOOTER ===*/
 .bottom {
@@ -258,6 +388,49 @@ button {
         width: 60px;
     }
 
+    /*=== MODAL ===*/
+    .modal {
+        padding-top: 30px;
+    }
+    
+    .modal-headertext {
+        font-size: 35px;
+    }
+    
+    .volunteerClose, .packClose, 
+    .momClose, .recipeClose, .todoClose, 
+    .socketClose, .directoryClose, .fancyClose {
+        font-size: 30px;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .tech-list {
+        column-count: 3;
+        column-gap: 75px;
+    }
+    
+    /* ==== MODAL FOOTER ==== */
+    
+    .cancel-btn {
+        top: 10px;
+        margin-top: 10px;
+    }
+    
+    .btn-source {
+        margin-top: 10px;
+    }
+    
+    .btn-view {
+        margin-top: 10px;
+    }
+    /*=== END OF MODAL ===*/
+
     /*=== FOOTER ===*/
     .footer {
         position: fixed;
@@ -298,7 +471,6 @@ button {
         text-decoration: none; */
         font-size: 27px;
     }
-
     /*===== END OF HEADER =====*/
 
     /*=== GRID CONTAINER ===*/
@@ -321,6 +493,40 @@ button {
         font-size: 18px;
     }
     
+    /*=== MODAL ===*/
+
+    .volunteerClose, .packClose, 
+    .momClose, .recipeClose, .todoClose, 
+    .socketClose, .directoryClose, .fancyClose {
+        /* color: #aaa; */
+        /* float: right; */
+        font-size: 30px;
+        /* font-weight: bold;
+        color: white; */
+        padding-top: 10px;
+    }
+
+    .modal-headertext {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 40px;
+        padding-bottom: 10px;
+        padding-top: 25px;
+    }
+
+    .tech-list {
+        column-count: 4;
+        column-gap: 40px;
+        list-style-type: square;
+    }
+
+    /* ==== MODAL FOOTER ==== */
+
+    .cancel-btn {
+        margin-top: 10px;
+    }
+    /*=== END OF MODAL ===*/
+
     /*=== FOOTER ===*/
     .bottom {
         font-family: 'Roboto Condensed', sans-serif;
@@ -331,170 +537,4 @@ button {
         grid-gap: 5px;
         bottom: 0;
     }
-}
-
-/* == Modal Info == */
-
-
-
-/* Button - More */
-
-
-/* == Modal Content == */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    /* background-color: rgb(0,0,0); */
-    background-color: rgb(38, 126, 208);
-    background-color: (0,0,0,0.4);
-}
-
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.modal-content {
-    max-width: 900px;
-}
-
-.modal-header {
-    padding: 2px 16px;
-    /* background-color: white; */
-    /* color: rgb(38, 126, 208); */
-    border: rgba(2, 81, 144, 0.2);
-    border-bottom-style: solid;
-    background-color: rgba(42, 139, 228, 0.89);
-    color: white;
-}
-
-.volunteerClose, .packClose, 
-.momClose, .recipeClose, .todoClose, 
-.socketClose, .directoryClose, .fancyClose {
-    /* color: #aaa; */
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    color: white;
-    padding-top: 5px;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-header-text {
-    padding-top: 25px;
-    font-size: 40px;
-}
-
-h2 {
-    font-size: 25px;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-top: 15px;
-}
-
-.modal-subheader {
-    /* font-size: 25px;
-    padding-top: 10px; */
-    border: rgb(38, 126, 208);
-    border-bottom-style: solid;
-}
-
-.modal-summary {
-    margin-right: 20px;
-    margin-left: 20px;
-    padding-top: 15px;
-    line-height: 1.2;
-    padding-bottom: 0;
-}
-
-.tech-list {
-    column-count: 3;
-    column-gap: 20px;
-    list-style-type: square;
-    margin-left: 36px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 1.3;
-    column-count: 4;
-    column-gap: 40px;
-}
-
-/* ==== MODAL FOOTER ==== */
-.modal-footer {
-    position: relative;
-    padding: 40px 16px;
-    /* background-color: white; */
-    /* color: rgb(38, 126, 208); */
-    border: rgba(2, 81, 144, 0.2);
-    border-top-style: solid;
-    background-color: rgba(42, 139, 228, 0.89);
-    color: white;
-}
-
-/* #cancel-btn-volunteer, #cancel-btn-pack, #cancel-btn-mom {
-    position: absolute;
-    top: 22px;
-    right: 15px;
-    vertical-align: top;
-    text-align: center;
-    height: 35px;
-    width: 65px;
-    background-color: white;
-    color:  rgb(38, 126, 208);
-} */
-
-.cancel-btn {
-    position: absolute;
-    top: 22px;
-    right: 15px;
-    vertical-align: top;
-    text-align: center;
-    height: 35px;
-    width: 65px;
-    background-color: white;
-    color:  rgb(38, 126, 208);
-}
-
-.btn-source {
-    position: absolute;
-    left: 15px;
-    height: 45px;
-    width: 80px;
-    margin-top: 10px;
-    background-color: white;
-    color:  rgb(38, 126, 208);
-}
-
-.btn-view {
-    position: absolute;
-    left: 130px;
-    /* left: 80px; */
-    height: 45px;
-    width: 80px;
-    margin-top: 10px;
-    bottom: 15px;
-    cursor: pointer;
-    background-color: white;
-    color:  rgb(38, 126, 208);
-    /* border-radius: 50%; */
-    /* color: white; */
-
 }
